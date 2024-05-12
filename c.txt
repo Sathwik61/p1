@@ -1,0 +1,10 @@
+MONGODB_URI=mongodb+srv://sathwik21cs086:MvY36hlpBtVBtAon@cluster0.55mvepq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+TOKEN_KEY=qpr@290_0^6ty
+    JWT_EXPIRES=1h
+    PORT=8000
+
+
+
+
+f
+ NEXT_PUBLIC_BASE_URL=http://localhost:8000/api/v1
