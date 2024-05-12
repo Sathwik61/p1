@@ -2,15 +2,14 @@ import express from 'express'
 import { config } from 'dotenv'
 import connectDB from './src/db/dbconn.js'
 import routes from './src/api/routes/routes.js'
-import cors from 'cors'
 import path from 'path'
 import cookieParser from 'cookie-parser'
 import { fileURLToPath } from 'url'
 import session from 'express-session'
+var cors = require('cors')
 
 config()
 connectDB();
-
 const port = process.env.PORT || 8000;
 
 const corsOptions = {
@@ -20,7 +19,7 @@ const corsOptions = {
 
 const app = express()
 
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(session({
     secret: process.env.TOKEN_KEY,
     resave: false,
